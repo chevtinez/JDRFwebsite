@@ -18,7 +18,7 @@
     <link href="css/main.css" rel="stylesheet">
 
     <!-- Custom Fonts -->
-    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Open+Sans+Condensed:300|Raleway:400,500,600,700|Francois+One|Bangers' rel='stylesheet' type='text/css'>
+    <link href='http://fonts.googleapis.com/css?family=Lato:400,700,400italic,700italic|Open+Sans+Condensed:300|Raleway:800,400,500,600,700|Francois+One|Bangers' rel='stylesheet' type='text/css'>
 
     <!-- HTML5 Shim and Respond.js IE8 support of HTML5 elements and media queries -->
     <!-- WARNING: Respond.js doesn't work if you view the page via file:// -->
@@ -29,16 +29,16 @@
 
 </head>
 
-<body id="page-top" class="index">--
+<body id="page-top" class="index">
 
 <!--main wrapper to create left/right shadow-->
 
     <!-- Navigation -->
-    <nav class="navbar navbar-default navbar-fixed-top">
+    <nav class="navbar navbar-default navbar-fixed-top" role="navigation">
         <div class="container">
             <!-- Brand and toggle get grouped for better mobile display -->
             <div class="navbar-header page-scroll">
-                <button type="button" class="navbar-toggle" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1">
+                <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#menu" aria-expanded="false" aria-controls="navbar">
                     <span class="sr-only">Toggle navigation</span>
                     <span class="icon-bar"></span>
                     <span class="icon-bar"></span>
@@ -50,17 +50,17 @@
             </div>
 
             <!-- Collect the nav links, forms, and other content for toggling -->
-            <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                <ul class="nav navbar-nav navbar-right">
+            <div class="navbar-collapse collapse" id="menu">
+                <ul class="nav navbar-nav navbar-collapse navbar-right">
                     <li class="hidden">
                         <a href="#page-top"></a>
                     </li>
                     <li class="dropdown">
-                        <a class="dropdown-toggle" href="#" data-toggle="dropdown">About Heroes for the Cure<strong class="caret"></strong></a>
-                            <ul class="dropdown-menu" id="navList">
-                                <li class="page-scroll"><a class="page-scroll" href="#about">Event Information</a></li>
-                                <li class="page-scroll"><a href="#why">Why Support JDRF?</a></li>
-                                <li class="page-scroll"><a href="#honorees">Honorees</a></li>
+                        <a class="dropdown-toggle" href="#" data-toggle="dropdown" role="button" aria-expanded="false">About Heroes for the Cure<strong><span  class="caret"></span></strong></a>
+                            <ul class="dropdown-menu" id="aboutNav" role="menu">
+                                <li class="page-scroll"><a class="page-scroll" href="#aboutJDRF">Event Information</a></li>
+                                <li class="page-scroll"><a class="page-scroll" href="#whysupport">Why Support JDRF?</a></li>
+                                <li class="page-scroll"><a class="page-scroll" href="#honorees">Honorees</a></li>
                             </ul>
                     </li>
                     <!-- <li>
@@ -70,60 +70,64 @@
                         <a class="page-scroll" href="#honorees">Honorees</a>
                     </li> -->
                     <li class="dropdown">
-                        <a class="dropdown-toggle" data-toggle="dropdown" href="#sponsorship">How can I help?<strong class="caret"></strong></a>
-                        <ul class="dropdown-menu">
-                                <li class="page-scroll" href="#">Sponsorship &amp; Ads</li>
-                                <li class="page-scroll" href="#">Fund A Cure</li>
+                        <a class="dropdown-toggle" data-toggle="dropdown" href="#" aria-expanded="false">How can I help?<strong><span class="caret"></span></strong></a>
+                        <ul class="dropdown-menu" id="howNav" role="menu">
+                                <li class="page-scroll"><a class="page-scroll" href="#sponsorships">Sponsorship &amp; Ads</a></li>
+                                <li class="page-scroll"><a class="page-scroll" href="#FundACure">Fund A Cure</a></li>
+                                <li class="page-scroll"><a class="page-scroll" href="#auction">Auction</a></li>
                         </ul>
                     </li>
                     <li>
-                        <a class="page-scroll" href="#fund-a-cure">Leadership</a>
+                        <a class="page-scroll" href="#leadership">Leadership</a>
                     </li>
                     <li>
                         <a class="page-scroll" href="#contact">Contact</a>
                     </li>
                 </ul>
-            </div>
-            <!-- /.navbar-collapse -->
+            </div><!-- /.navbar-collapse -->
         </div>
         <!-- /.container-fluid -->
     </nav>
 
     <!-- Header -->
     <header>
-        <div class="container">
+        <div class="container-fluid" id="home">
             <div class="intro-text" id="intro-box">
 
-            <img src="../img/background.png" class="img-responsive" alt="Hero for the Cure background">
+            <img class="img-responsive" id="hero" src="img/jdrfHero.svg" alt="Hero for the Cure background">
 
             <!-- Start Honoree Carousel-->
-
-            <div id="myCarousel" class="carousel slide" data-ride="carousel">
+            <div class="hidden-lg">
+              <p class="announce">Sunday, May 9</p>
+              <p class="announce">Connecticut Convention Center</p>
+              <p class="announce">Hartford, CT</p>
+            </div>
+            <div id="myCarousel" class="carousel slide hidden-xs hidden-sm hidden-md" data-ride="carousel">
               <!-- Indicators -->
-              <ol class="carousel-indicators">
+              <!-- <ol class="carousel-indicators">
                 <li data-target="#myCarousel" data-slide-to="0" class="active"></li>
                 <li data-target="#myCarousel" data-slide-to="1"></li>
                 <li data-target="#myCarousel" data-slide-to="2"></li>
                 <li data-target="#myCarousel" data-slide-to="3"></li>
-              </ol>
+              </ol> -->
 
               <!-- Wrapper for slides -->
               <div class="carousel-inner" role="listbox">
                 <div class="item active">
-                  <img src="img/portfolio/JimCalhoun.png" alt="Honoree Jim Calhoun">
+                  <img src="img/openSlide.png" alt="Opening Slide">
                 </div>
 
-                <div class="item">
-                  <img src="img_chania2.jpg" alt="Chania">
+                <div class="item">      
+                  <img src="img/nextSlide2.png" alt="Honorees Jim Calhoun, Bernie Schilberg and The Samuels Family">
                 </div>
 
-                <div class="item">
+                <!-- <div class="item">
                   <img src="img_flower.jpg" alt="Flower">
                 </div>
 
                 <div class="item">
                   <img src="img_flower2.jpg" alt="Flower">
-                </div>
+                </div> -->
               </div>
 
               <!-- Left and right controls -->
@@ -140,20 +144,23 @@
             <!-- end Honoree Carousel-->
                 <!-- <div class="intro-lead-in" id="calling">Calling all...</div> -->
                 <div class="intro-heading" id="hftc">
-                <h4>Calling all...</h4>
-                <h1>Heroes for the Cure</h1>
+                <h4>Calling all . . .</h4>
+                <h1>Heroes<span class="break"> </span>for the <span class="break"></span>Cure <span class="break"></h1>
                 </div>
-                <div id="ctaButtons">
+            </div>
+
+            <!-- Sticky bottom nav bar (combined with footer) -->
+
+            <!-- <div class="navbar navbar-default navbar-fixed-bottom center-block" id="navbottom">
                 <a href="#" class="page-scroll btn btn-primary">Purchase Tickets, Sponsorships and Ads</a>
                 <a href="#" class="page-scroll btn btn-primary">Preview Auction</a>
                 <a href="#" class="page-scroll btn btn-primary">Fund A Cure</a>
-                </div>
-            </div>
+            </div> End sticky bottom navbar-->
         </div>
     </header>
 
-    <!-- Services Section -->
-    <section id="services">
+    <!-- Sponsors Section -->
+<!--     <section id="sponsors">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -162,18 +169,20 @@
                 </div>
             </div>
                 <div class="row">
-                  <div class="col-md-12"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
-                  <div class="col-md-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
-                  <div class="col-md-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
-                  <div class="col-md-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
-                  <div class="col-md-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
-                  <div class="col-md-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
-                  <div class="col-md-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
-                  <div class="col-md-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
-                  <div class="col-md-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
-                  <div class="col-md-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
-                  <div class="col-md-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
-                  <div class="col-md-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
+                  
+                  <div class="col-xs-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
+                  <div class="col-xs-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
+                  <div class="col-xs-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
+                  <div class="col-xs-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
+                  <div class="col-xs-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
+                  <div class="col-xs-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
+                  <div class="col-xs-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
+                  <div class="col-xs-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
+                  <div class="col-xs-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
+                  <div class="col-xs-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
+                  <div class="col-xs-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
+                  <div class="col-xs-1"><img src="img/logos/philThumb.png" alt="placeholder" href="#"></div>
+                
                 </div>
                 <div class="row">
                   <div class="col-md-8">.col-md-8</div>
@@ -188,48 +197,277 @@
                   <div class="col-md-6">.col-md-6</div>
                   <div class="col-md-6">.col-md-6</div>
                 </div>
-            <!-- <div class="row text-center">
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-shopping-cart fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">E-Commerce</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+        </div>
+    </section> -->
+
+    <!-- About JDRF Section-->
+    <section id="aboutJDRF" class="bg-light-gray">
+    <div class="container">
+        <div class="row">
+            <div class="col-lg-12 text-center">
+                <h2 class="section-heading">Event Information</h2>
+            </div>
+        </div>
+        <div class="row" id="eventstrip">
+            
+            <div class="col-md-6" id="phoneimg">
+              <div class="row">
+                <div class="col-md-12" id="schedule">
+                    <h3>Did you get the details?</h3>
+                    <h4>Sunday, May 9</h4>
+                    <p>Connecticut Convention Center</p>
+                    <h4>6&colon;00 p.m.</h4>
+                    <p>Cocktail Reception and Silent Auction</p>
+                    <h4>7&colon;45 p.m.</h4>
+                    <p>Dinner, Award Presentation, Live Auction and <nobr>Fund A Cure</nobr></p>
+                    <h4>10&colon;30 p.m.</h4>
+                    <p>Entertainment and Dancing</p>
                 </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-laptop fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Responsive Design</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
+              </div>
+            </div>
+                    
+            <div class="col-md-6" id="edescription">
+                <h4>Attire</h4>
+                <p>The JDRF Promise Ball is Black Tie Optional.</p>
+                <h4>Tickets</h4>
+                <p>Individual tickets are &dollar;250</p>
+                <h4>RSVP by April 24, 2014</h4>
+                <p>Just as a reminder, ticket purchases and Fund A Cure gifts may be conveniently purchased online by selecting the yellow button at the bottom of this page, or by calling the JDRF office directly at <nobr>860-470-0020.</nobr></p>
+                <h4>Directions &amp; Parking Information</h4>
+                <p>Connecticut Convention Center <br />
+                100 Columbus Boulevard<br />Hartford, CT 06103</p>
+                <p>The Convention Center&apos;s main lobby is located on Columbus Blvd. It is accessible from Level P1 of the parking garage. Level P5 of the garage tower provides an alternate entrance, along an outdoor esplanade, to the Convention Center&apos;s riverside entrance. Parking is complimentary.</p>
+                <p><a href="#">Click here</a> for door&ndash;to&ndash;door driving directions.</p>
+            </div>
+        </div>    
+    </div>
+    </section>
+
+    <!-- Sponsorships & Ads Section -->
+
+    <section id="sponsorships">
+        <div class="container">
+            <div class="row">
+                <div class="col-lg-12 text-center">
+                    <h2 class="section-heading">Sponsorships &amp; Ads</h2>                    
+                    <!-- <h3 class="section-subheading text-muted">A variety of sponsorship opportunities for a variety of budgets</h3> -->
                 </div>
-                <div class="col-md-4">
-                    <span class="fa-stack fa-4x">
-                        <i class="fa fa-circle fa-stack-2x text-primary"></i>
-                        <i class="fa fa-lock fa-stack-1x fa-inverse"></i>
-                    </span>
-                    <h4 class="service-heading">Web Security</h4>
-                    <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Minima maxime quam architecto quo inventore harum ex magni, dicta impedit.</p>
-                </div>
-            </div> -->
+            </div>
+            <div class="row">
+            <div class="col-md-6">
+            <h4 class="sponsor-subheading">Sponsorship Levels</h4>
+                <div class="panel-group" id="accordion" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingOne">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion" href="#collapseOne" aria-expanded="true" aria-controls="collapseOne">
+          Presenting Sponsor &mdash; &dollar;50,000
+        </a>
+      </h4>
+    </div>
+    <div id="collapseOne" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingOne">
+      <div class="panel-body">
+        <ul>
+            <li>Premier billing as Presenting Sponsor</li>
+            <li>VIP seating for three tables of ten with concierge table service</li>
+            <li>Podium recognition during Promise Ball</li>
+            <li>Premier corporate logo event signage</li>
+            <li>Inside front or inside back cover ad in program journal</li>
+            <li>Logo on Chapter and Promise Ball websites with hyperlink</li>
+            <li>Exclusive media coverage (print &amp; televised NBC Connecticut PSA)</li>
+            <li>Chapter Newsletter recognition</li>
+            <li>Recognition in the Hartford Business Journal, Business New Haven and other local publications</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTwo">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseTwo" aria-expanded="false" aria-controls="collapseTwo">
+          Platinum Sponsor &mdash; &dollar;25,000
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTwo" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTwo">
+      <div class="panel-body">
+        <ul>
+            <li>Premier seating for two tables of ten</li>
+            <li>Podium recognition during Promise Ball</li>
+            <li>Premier corporate logo event signage</li>
+            <li>Double full-page ad in program journal</li>
+            <li>Logo on Chapter and Promise Ball websites with hyperlink</li>
+            <li>Chapter Newsletter recognition</li>
+            <li>Recognition in the Hartford Business Journal, Business New Haven and other local publications</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingThree">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseThree" aria-expanded="false" aria-controls="collapseThree">
+          Diamond Sponsor &mdash; &dollar;15,000
+        </a>
+      </h4>
+    </div>
+    <div id="collapseThree" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingThree">
+      <div class="panel-body">
+        <ul>
+            <li>Preferred seating for one table of ten</li>
+            <li>Acknowledgement at event</li>
+            <li>Premier corporate logo event signage</li>
+            <li>Full-page ad in program journal</li>
+            <li>Logo on Chapter and Promise Ball websites with hyperlink</li>
+            <li>Chapter Newsletter recognition</li>
+            <li>Recognition in the Hartford Business Journal, Business New Haven and other local publications</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFour">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFour" aria-expanded="false" aria-controls="collapseFour">
+          Gold Sponsor &mdash; &dollar;10,000
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFour" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFour">
+      <div class="panel-body">
+        <ul>
+            <li>Preferred seating for one table of ten</li>
+            <li>Acknowledgement at event</li>
+            <li>Corporate logo event signage</li>
+            <li>Full-page ad in program journal</li>
+            <li>Logo on Chapter and Promise Ball websites with hyperlink</li>
+            <li>Chapter Newsletter recognition</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+    <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingFive">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion" href="#collapseFive" aria-expanded="false" aria-controls="collapseFive">
+          Research Sponsor &mdash; &dollar;5,000
+        </a>
+      </h4>
+    </div>
+    <div id="collapseFive" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingFive">
+      <div class="panel-body">
+        <ul>
+            <li>Preferred seating for one table of ten</li>
+            <li>Acknowledgement at event</li>
+            <li>Corporate logo event signage</li>
+            <li>Half-page ad in program journal</li>
+            <li>Logo on Chapter and Promise Ball websites with hyperlink</li>
+            <li>Chapter Newsletter recognition</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+            <!-- Underwriting Opportunities -->
+            <div class="col-md-6">
+            <h4 class="sponsor-subheading">Underwriting Opportunities</h4>
+                <div class="panel-group" id="accordion2" role="tablist" aria-multiselectable="true">
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingUno">
+      <h4 class="panel-title">
+        <a data-toggle="collapse" data-parent="#accordion2" href="#collapseUno" aria-expanded="true" aria-controls="collapseUno">
+          BidPal Auction Sponsor &mdash; &dollar;10,000 &#40;1 Available&#41;
+        </a>
+      </h4>
+    </div>
+    <div id="collapseUno" class="panel-collapse collapse in" role="tabpanel" aria-labelledby="headingUno">
+      <div class="panel-body">
+        <ul>
+            <li>One table of ten guests</li>
+            <li>Full-page ad in program journal</li>
+            <li>Recognition as Auction Sponsor on electronic bidding devices given to each couple/individual bidder</li>
+            <li>On&ndash;screen recognition as Auction Sponsor during Live Auction</li>
+            <li>Company&apos;s name/logo on bid cards for Live Auction and Fund A Cure</li>
+            <li>Recognition as Auction Sponsor on the Promise Ball website</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingDos">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseDos" aria-expanded="false" aria-controls="collapseDos">
+          Band Sponsor &mdash; &dollar;5,000 &#40;SOLD!&#41;
+        </a>
+      </h4>
+    </div>
+    <div id="collapseDos" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingDos">
+      <div class="panel-body">
+        <ul>
+            <li>One table of ten guests</li>
+            <li>Half page ad in program journal</li>
+            <li>Prominent signage and verbal recognition on ballroom stage</li>
+            <li>Recognition as Band Sponsor on the Promise Ball website</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingTres">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseTres" aria-expanded="false" aria-controls="collapseTres">
+          Bank &amp; Registration Sponsor &mdash; &dollar;5,000 &#40;1 Available&#41;
+        </a>
+      </h4>
+    </div>
+    <div id="collapseTres" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingTres">
+      <div class="panel-body">
+        <ul>
+            <li>One table of ten guests</li>
+            <li>Half page ad in program journal</li>
+            <li>Prominent signage at registration and check&ndash;out</li>
+            <li>Opportunity to provide guest pens with Company Logo at registration and check&ndash;out</li>
+            <li>Recognition as Bank and Registration Sponsor on Promise Ball website</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+  <div class="panel panel-default">
+    <div class="panel-heading" role="tab" id="headingCuatro">
+      <h4 class="panel-title">
+        <a class="collapsed" data-toggle="collapse" data-parent="#accordion2" href="#collapseCuatro" aria-expanded="false" aria-controls="collapseCuatro">
+          Valet Sponsor &mdash; &dollar;5,000 &#40;1 Available&#41;
+        </a>
+      </h4>
+    </div>
+    <div id="collapseCuatro" class="panel-collapse collapse" role="tabpanel" aria-labelledby="headingCuatro">
+      <div class="panel-body">
+        <ul>
+            <li>One table of ten guests</li>
+            <li>Half page ad in program journal</li>
+            <li>Prominent signage at curb/entrance to the event</li>
+            <li>Opportunity to leave patron gift in car upon guests&apos; departure</li>
+            <li>Recognition as Valet Sponsor on Promise Ball website</li>
+        </ul>
+      </div>
+    </div>
+  </div>
+</div>
+            </div>
+            </div>
+
         </div>
     </section>
 
-    <!-- About JDRF Section-->
-    <section id="aboutJDRF" class="">
-
-    </section>
-
-    <!-- Portfolio Grid Section -->
+    <!-- Honorees (Portfolio Grid) Section -->
     <section id="honorees" class="bg-light-gray">
         <div class="container">
             <div class="row">
 
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">2015 Honorees</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <!-- <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3> -->
                 </div>
             </div>
             <div class="row">
@@ -240,11 +478,29 @@
                                 <i class="fa fa-plus fa-3x"></i>
                             </div>
                         </div>
-                        <img src="img/portfolio/honoreeSanders.png" class="img-responsive" alt="">
+                        <img src="img/portfolio/honoreeSchilberg.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Title, title</h4>
-                        <p class="text-muted">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.</p>
+                        <h4>CEO of Prime Materials Recovery, Inc.</h4>
+                        <p class="text-muted">
+                        Bernard Schilberg is the CEO of Prime Materials Recovery, Inc, headquartered in East Hartford, 
+                        CT. Bernie has served the closely held company for 37 years in many various capacities 
+                        including operations, sales and marketing, and strategic planning. Bernard also serves on the 
+                        Board of Directors of the Copper Club as well as the Copper and Brass Fabricators Council. He is 
+                        a member of the American Copper Council where he is a Past Chairman, as well as the Institute 
+                        of Scrap Recycling Industries, and the Wire Association. He received the United Nation&apos;s ADL 
+                        Metal&apos;s Torch of Liberty Award in 1993, and the Wire Association’s Distinguished Career Award
+                        in 2005.</p>
+                        <p class="text-muted">  
+                        Bernard has been an active supporter of JDRF through his longtime friendships with Bob 
+                        Samuels and Jim Calhoun. He has supported the Hartford Walk to Cure Diabetes, the Annual 
+                        Promise Ball Gala, and many other JDRF programs. He has also been involved in many 
+                        charitable organizations, including the UConn Foundation, The Rotary Club, and Junior 
+                        Achievement. Bernard received his BS degree in Accounting from Bryant University in 1977, and 
+                        completed his CPA requirements in 1978. He resides in South Windsor with his wife Beth. They 
+                        three sons, David, Bryan, and Robb, two daughters-in-law, Amber and Rachel, and two 
+                        granddaughters, Adison and Leah.
+                        </p>
                     </div>
                 </div>
                 <div class="col-md-4 portfolio-item">
@@ -257,8 +513,22 @@
                         <img src="img/portfolio/honoreeSamuels.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Title, title</h4>
-                        <p class="text-muted">Sed ut perspiciatis unde omnis iste natus error sit voluptatem accusantium doloremque laudantium, totam rem aperiam, eaque ipsa quae ab illo inventore veritatis et quasi architecto beatae vitae dicta sunt explicabo. Nemo enim ipsam voluptatem quia voluptas sit aspernatur aut odit aut fugit, sed quia consequuntur magni dolores eos qui ratione voluptatem sequi nesciunt. Neque porro quisquam est, qui dolorem ipsum quia dolor sit amet, consectetur, adipisci velit, sed quia non numquam eius modi tempora incidunt ut labore et dolore magnam aliquam quaerat voluptatem. Ut enim ad minima veniam, quis nostrum exercitationem ullam corporis suscipit laboriosam, nisi ut aliquid ex ea commodi consequatur? Quis autem vel eum iure reprehenderit qui in ea voluptate velit esse quam nihil molestiae consequatur, vel illum qui dolorem eum fugiat quo voluptas nulla pariatur?</p> 
+                        <h4>Bob, Renee, Diana and Michael Samuels</h4>
+                        <p class="text-muted">
+                            Bob and Renee Samuels of West Hartford became involved with JDRF in 1988 when their son
+                            Michael was diagnosed at the age of 16.  Carol Lurie, one of the co-founders of JDRF came to 
+                            visit Bob and Renee soon after Michael’s diagnosis and asked them to get involved with JDRF. 
+                            Bob soon became active in the North Central CT/Western Mass Chapter and in 1990 he joined 
+                            the International Board of Directors (IBOD) where he served as vice president of fundraising 
+                            and as a member of the executive, nominating and conference committees.</p>  
+                            <p class="text-muted">
+                            In his time on IBOD, Bob spearheaded the growth of the Walk To Cure Diabetes program, leveraging his contacts in the supermarket industry to launch JDRF&apos;s paper sneaker sales campaign.  Four 
+                            major current sneaker sale campaigns started with Bob: TOPS Friendly Markets in Western New 
+                            York started in 1993 and has raised over &dollar;9.43 million.  The campaign started with Bob reaching out to his friend Larry Castellani , who after leaving TOPS took the sneaker sale campaign idea with him when he became CEO of Advance Auto Parts.  Advanced Auto has conducted the 
+                            campaign for the past 21 years and has raised over &dollar;40 million for JDRF.  Stop &amp; Shop&apos;s annual paper sneaker sales campaign was started with Bob’s contacts in the supermarket industry and today has raised over &dollar;9.1 million.  In addition, in 1994 Bob asked his good friend Jerry Rossi to start a paper sneaker sales campaign at his clothing retailer, Marshall&apos;s.  The Marshall&apos;s paper sneaker sales campaign started with 10 stores and today has grown to over 900 stores and raises more than &dollar;3 million annually.</p>  
+                            <p class="text-muted">
+                            Bob and Renee were early donors to the Artificial Pancreas Project (APP), making a &dollar;500,000 gift to help get the project started.  They have been fundraisers in the Greater Hartford community to help its continued success.  Bob has remained very active in his local JDRF chapter, serving as gala chair, board president and an influential force in the chapters fundraising and outreach activities.  The entire Samuels Family has supported JDRF: Renee has served on the chapter Board of Directors and been active on the Promise Ball gala committee.  Michael has served on the New England Chapter&apos;s Board of Directors and has run the Boston Marathon for JDRF, raising over &dollar;75,000 annually.  Steven has supported the Promise Ball gala, raising over &dollar;100,000 annually and donating valuable auction items.  His daughter Diane has served on the gala planning committee and has been a regular supporter of the event.  Jon supports JDRF from California, contributing to the marathon and gala.
+                            </p> 
                     </div>
                 </div>
                  <div class="col-md-4 portfolio-item">
@@ -271,8 +541,32 @@
                         <img src="img/portfolio/honoreeCalhoun.png" class="img-responsive" alt="">
                     </a>
                     <div class="portfolio-caption">
-                        <h4>Title, title</h4>
-                        <p class="text-muted">At vero eos et accusamus et iusto odio dignissimos ducimus qui blanditiis praesentium voluptatum deleniti atque corrupti quos dolores et quas molestias excepturi sint occaecati cupiditate non provident, similique sunt in culpa qui officia deserunt mollitia animi, id est laborum et dolorum fuga. Et harum quidem rerum facilis est et expedita distinctio. Nam libero tempore, cum soluta nobis est eligendi optio cumque nihil impedit quo minus id quod maxime placeat facere possimus, omnis voluptas assumenda est, omnis dolor repellendus. Temporibus autem quibusdam et aut officiis debitis aut rerum necessitatibus saepe eveniet ut et voluptates repudiandae sint et molestiae non recusandae. Itaque earum rerum hic tenetur a sapiente delectus, ut aut reiciendis voluptatibus maiores alias consequatur aut perferendis doloribus asperiores repellat.</p>
+                        <h4>former University of Connecticut Head Men&apos;s Basketball Coach</h4>
+                        <p class="text-muted">
+                        Jim Calhoun, former University of Connecticut Head Men&apos;s Basketball Coach, is a long-time
+                        friend of Bob Samuels, and has been involved with JDRF for over 20 years. He played a key role 
+                        in the growth of the Hartford Walk to Cure Diabetes, has served as an Honorary Chair of the 
+                        Promise Ball Gala, and has been an Honorary Member of the Chapter&apos;s Board of Directors for 
+                        the past 10 years.</p>
+                        <p class="text-muted">
+                        When the Hartford Walk to Cure was in its early years, Bob Samuels asked Jim for his support of 
+                        the event. Jim brought the men&apos;s basketball Players to the Walk where they signed autographs 
+                        and met the walkers. Because of the team&apos;s national fame, the players&apos; presence was a huge 
+                        boost to the event and helped to draw participants and valuable media attention. Jim also 
+                        attended many of the Walk&apos;s planning meetings, offering insight and expertise as to how to
+                        grow the event and raise more money. His support of the Walk to Cure helped build it into the 
+                        fundraising success it is today.</p>
+                        <p class="text-muted">
+                        Jim&apos;s phenomenal coaching success story includes three NCAA National Championships (1999, 
+                        2004, 2011) at Connecticut, and four appearances in the Final Four. In 2005, Jim earned 
+                        basketball&apos;s highest honor while still an active coach: Election into the Naismith Memorial 
+                        Basketball Hall of Fame. In 2006, along with the other greats of the game, he was also inducted 
+                        into the National Collegiate Basketball Hall of Fame as a member of its founding class. 
+                        Jim&apos;s overall record as a collegiate head coach is 873-380, moving into rarified air and status as a member of the 800-win college coaching fraternity with a win over Marquette on February 
+                        25, 2009. Coach Calhoun is one of only eight Division I coaches in NCAA history to have earned 
+                        his way into that 800-win club. He ranks sixth all-time and third among active coaches in 
+                        coaching victories, and he is first among active coaches in number of games coached.
+                        </p>
                     </div>
                 </div>
                 <!-- <div class="col-md-4 col-sm-6 portfolio-item">
@@ -321,13 +615,13 @@
         </div>
     </section>
 
-    <!-- About Section -->
-    <section id="about">
+    <!-- Why Support Section -->
+    <section id="whysupport">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
                     <h2 class="section-heading">Why Support JDRF?</h2>
-                    <h3 class="section-subheading text-muted">Lorem ipsum dolor sit amet consectetur.</h3>
+                    <h3 class="section-subheading text-muted">JDRF is uniquely positioned to create a future without T1D.</h3>
                 </div>
             </div>
             <div class="row">
@@ -420,22 +714,183 @@
         </div>
     </section>
 
-    <!-- Team Section -->
+    <!-- Fund A Cure Section -->
+
+    <section id="FundACure" class="bg-light-gray">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12 text-center">
+          <h2 class="section-heading">Fund A Cure</h2>
+          <h3 class="section-subheading text-muted">100&#37;  of Fund A Cure donations go to research and are fully <nobr>tax&ndash;deductible.</nobr></h3>
+
+          <p>Fund A Cure is a unique opportunity to make a gift in which 100&#37; of the proceeds will go directly to support JDRF&apos;s research program. Since its inception in 1970, JDRF has funded virtually every major breakthrough in diabetes research. The path to a cure for diabetes is as complex as the disease itself, but tremendous progress is being made every day and the goal is in sight. Supporting Fund A Cure is the best way for you to become a direct part of this process.</p>
+          <p>Donations of $5,000 and above will be announced the night of the event. All donations of &dollar;500 and above received by April 9, 2015 will be acknowledged in the program journal.</p>
+          </div>
+        </div>
+        <div class="row">
+        </div>
+      </div>
+    </section>
+
+    <!-- Auction Section -->
+
+    <section id="auction">
+      <div class="container">
+        <div class="row">
+          <div class="col-lg-12">
+            <h2 class="section-heading text-center">Auction</h2>
+            <p>Annually, The Promise Ball features a silent and live auction with exclusive items such as luxury travel packages, VIP sports packages, exciting entertainment packages, collectibles, and more!</p>
+            <p>Click <a href="docs/15GalaDonorForm.pdf">here</a> to donate an item for the 2015 Heroes for the Cure silent or live auction.</p> 
+          </div>
+        </div>
+      </div>
+    </section>
+
+    <!-- Leadership Section -->
     <section id="leadership" class="bg-light-gray">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
-                    <h2 class="section-heading">Leadership</h2>
+                <h2 class="section-heading">Leadership</h2>
                     <h3 class="section-subheading text-muted">2015 Board of Directors</h3>
                 </div>
             </div>
-            <div class="row">
+            <div class="row" id="listBox">
                 <div class="col-sm-6">
                     <div class="team-member"><!-- 
                         <img src="img/team/1.jpg" class="img-responsive img-circle" alt=""> -->
+                    <ul><a id="hartBoard">Hartford</a>
+                        <li>
                         <h3>President</h3>
                         <h4>Robert Samuels</h4>
                         <p class="text-muted">DMJ Management</p>
+                        </li>
+                        <li>
+                        <h3>Vice President</h3>
+                        <h4>Charles Murray</h4>
+                        <p class="text-muted">Travelers (retired)</p>
+                        </li>
+                        <li>
+                        <h3>Secretary</h3>
+                        <h4>Britt Ryan</h4>
+                        <p class="text-muted">Medtronics</p>
+                        </li>
+                        <li>
+                        <h3>Treasurer</h3>
+                        <h4>Jim Baranowski</h4>
+                        <p class="text-muted">Clinical Laboratory Partners</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Marc Schmittlein</h4>
+                        <p class="text-muted">Travelers</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Anthony Abate</h4>
+                        <p class="text-muted">Cigna</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Kevin Brayton</h4>
+                        <p class="text-muted">Prudential Retirement</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>John Cantillon</h4>
+                        <p class="text-muted">Pratt &amper; Whitney</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Joe D&apos;Ambrosio</h4>
+                        <p class="text-muted">CBS Radio/NBC Connecticut</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Jane Cerosky</h4>
+                        <p class="text-muted">Cisco Systems</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Katherine Cooke</h4>
+                        <p class="text-muted">Mass Mutual</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Cem Demirci</h4>
+                        <p class="text-muted">Connecticut Children&apos;s Medical Center</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Dr. Nancy Dunbar</h4>
+                        <p class="text-muted">Connecticut Children’s Medical Center</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Elizabeth Maldonado</h4>
+                        <p class="text-muted">Northeast Utilities</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Charles &quote;Chip&quote; Olson</h4>
+                        <p class="text-muted">People&apos;s United Bank</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Rebecca Morris</h4>
+                        <p class="text-muted">SPED Consultant</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Rina Patel</h4>
+                        <p class="text-muted">Dyno Nobel</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Dr. Kinga Pluta</h4>
+                        <p class="text-muted">Cooley Dickinson Hospital</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Diane Ravech</h4>
+                        <p class="text-muted">Women&qpos;s Health</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Mark Robitaille</h4>
+                        <p class="text-muted">Aetna</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Eileen Armas</h4>
+                        <p class="text-muted">NBC Connecticut</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Raymond Esposito</h4>
+                        <p class="text-muted">Old Lime Productions</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Cheryl Bessette</h4>
+                        <!-- <p class="text-muted">Cigna</p> -->
+                        </li>
+                        <li>
+                        <h3>Research Information Volunteer</h3>
+                        <h4>Steven Ruby, M.D.</h4>
+                        <p class="text-muted">St. Francis Hospital </p>
+                        </li>
+                        <li>
+                        <h3>Medical Advisor To Board</h3>
+                        <h4>Susan Ratzan, M.D.</h4>
+                        <p class="text-muted">Connecticut Children&apos;s Medical Center</p>
+                        </li>
+                        <li>
+                        <h3>Honorary Board Member</h3>
+                        <h4>James A. Calhoun</h4>
+                        <p class="text-muted">Head Coach Emeritus, UCONN Men&apos;s Basketball</p>
+                        </li>
+                    </ul>
                         <!-- <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -449,9 +904,147 @@
                 <div class="col-sm-6">
                     <div class="team-member">
                         <!-- <img src="img/team/2.jpg" class="img-responsive img-circle" alt=""> -->
-                        <h3>Vice President</h3>
-                        <h4>Charles Murray</h4>
-                        <p class="text-muted">DMJ Management</p>
+                        <ul><a id="havBoard">Greater New Haven</a><li>
+                        <h3>President</h3>
+                        <h4>Adrienne Block</h4>
+                        <!-- <p class="text-muted">Cigna</p> -->
+                        </li>
+                        <li>
+                        <h3>Vice-President</h3>
+                        <h4>Carol Goldberg</h4>
+                        <!-- <p class="text-muted">Cigna</p> -->
+                        </li>
+                        <li>
+                        <h3>Treasurer</h3>
+                        <h4>Armand Rossi</h4>
+                        <p class="text-muted">Marcum, LLP</p>
+                        </li>
+                        <li>
+                        <h3>Secretary</h3>
+                        <h4>Gerald Garcia</h4>
+                        <!-- <p class="text-muted">Cigna</p> -->
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Amanda Updyke</h4>
+                        <p class="text-muted">Quinnipiac University (student)</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Rob Card</h4>
+                        <p class="text-muted">KCI Medical</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Doug Schwan</h4>
+                        <p class="text-muted">Why Science, LLC</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Rosale Lobo</h4>
+                        <p class="text-muted">Southern CT State University</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Michael Ferguson</h4>
+                        <!-- <p class="text-muted">Cigna</p> -->
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Allisan Adams, Esquire</h4>
+                        <!-- <p class="text-muted">Cigna</p> -->
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Kathleen Ahern</h4>
+                        <p class="text-muted">Johnson &amp; Johnson</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Linda Bell</h4>
+                        <!-- <p class="text-muted">Cigna</p> -->
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Kenneth Boroson</h4>
+                        <p class="text-muted">Kenneth Boroson Architects</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Dr. Gerald & Marilyn Fishbone</h4>
+                        <!-- <p class="text-muted">Cigna</p> -->
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Dr. Kevan Herold</h4>
+                        <p class="text-muted">Yale Medical School</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Bunny Kasper</h4>
+                        <!-- <p class="text-muted">Cigna</p> -->
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Dr. Stuart Weinzimer</h4>
+                        <p class="text-muted">Yale School of Medicine</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Kurt Mazurosky</h4>
+                        <p class="text-muted">Prime Publishers, Inc.</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Dr. Jennifer Sherr</h4>
+                        <p class="text-muted">Yale School of Medicine</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Charles O&apos;Connell</h4>
+                        <p class="text-muted">Exerscript</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Karen Graffeo</h4>
+                        <p class="text-muted">Bittersweet Diabetes</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Dr. Jeremy Springhorn</h4>
+                        <p class="text-muted">Alexion Pharmaceuticals</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Christopher O&apos;Connor</h4>
+                        <p class="text-muted">Yale New Haven Health System</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Kim Folts</h4>
+                        <!-- <p class="text-muted">Cigna</p> -->
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Stephen Squinto</h4>
+                        <p class="text-muted">OrbiMed</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Joan &amp; Milt Wallack</h4>
+                        <!-- <p class="text-muted">Cigna</p> -->
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Albert Subloie</h4>
+                        <p class="text-muted">Tangoe, Inc.</p>
+                        </li>
+                        <li>
+                        <!-- <h3>Title</h3> -->
+                        <h4>Paul Rossi</h4>
+                        <p class="text-muted">North American Power &amp; Gas, LLC</p>
+                        </li>
+                        </ul>
                         <!-- <ul class="list-inline social-buttons">
                             <li><a href="#"><i class="fa fa-twitter"></i></a>
                             </li>
@@ -478,43 +1071,19 @@
                     </div>
                 </div> -->
             </div>
-            <div class="row">
+            <!-- <div class="row">
                 <div class="col-lg-8 col-lg-offset-2 text-center">
                     <p class="large text-muted">Lorem ipsum dolor sit amet, consectetur adipisicing elit. Aut eaque, laboriosam veritatis, quos non quis ad perspiciatis, totam corporis ea, alias ut unde.</p>
                 </div>
-            </div>
+            </div> -->
         </div>
     </section>
 
     <!-- Clients Aside -->
-    <aside class="clients">
-        <div class="container">
-            <div class="row">
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/envato.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/designmodo.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/themeforest.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-                <div class="col-md-3 col-sm-6">
-                    <a href="#">
-                        <img src="img/logos/creative-market.jpg" class="img-responsive img-centered" alt="">
-                    </a>
-                </div>
-            </div>
-        </div>
-    </aside>
+    <!-- 
+     -->
 
-    <section id="contact">
+    <!-- <section id="contact">
         <div class="container">
             <div class="row">
                 <div class="col-lg-12 text-center">
@@ -556,32 +1125,34 @@
                 </div>
             </div>
         </div>
-    </section>
+    </section> -->
 
-    <footer>
+    <footer class="navbar-fixed-bottom">
         <div class="container">
             <div class="row">
-                <div class="col-md-4">
-                    <span class="copyright">Copyright &copy; Your Website 2014</span>
+                <div class="col-lg-12">
+                    <!-- <a id="jdrfAddress">JDRFCTMA &mdash; 20 Batterson Park Road, Floor 3, Farmington, CT  06032</a> -->
+                    <a href="https://jdrf-greater-ct-western-ma.ejoinme.org/MyEvents/HeroesfortheCure/RegistrationAdorPurchaseTickets/tabid/545451/Default.aspx" class="page-scroll btn btn-primary">Purchase Tickets, Sponsorships and Ads</a>
+                    <a href="https://jdrf-greater-ct-western-ma.ejoinme.org/auction2015" class="page-scroll btn btn-primary">Preview Auction</a>
+                    <a href="https://jdrf-greater-ct-western-ma.ejoinme.org/MyEvents/HeroesfortheCure/RegistrationAdorPurchaseTickets/tabid/545451/Default.aspx" class="page-scroll btn btn-primary">Fund A Cure</a>
+                    <!-- <a id="jdrfPhone">Phone&colon;  &#40;860&#41; 470-0020  &bull;  Fax&colon;  &#40;860&#41; 674-0880</a> -->
                 </div>
-                <div class="col-md-4">
-                    <ul class="list-inline social-buttons">
-                        <li><a href="#"><i class="fa fa-twitter"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-facebook"></i></a>
-                        </li>
-                        <li><a href="#"><i class="fa fa-linkedin"></i></a>
-                        </li>
-                    </ul>
+            </div>
+            <div class="row">
+                <!-- <div class="col-md-4">
+                    <span class="copyright">Copyright &copy; JDRF 2015</span>
+                </div> -->
+                <div class="col-lg-12 hidden-xs">
+                    <p>JDRFCTMA &mdash; 20 Batterson Park Road, Floor 3, Farmington, CT  06032 | Phone&colon;  &#40;860&#41; 470-0020  &bull;  Fax&colon;  &#40;860&#41; 674-0880</p>
                 </div>
-                <div class="col-md-4">
+                <!-- <div class="col-md-4">
                     <ul class="list-inline quicklinks">
                         <li><a href="#">Privacy Policy</a>
                         </li>
                         <li><a href="#">Terms of Use</a>
                         </li>
                     </ul>
-                </div>
+                </div> -->
             </div>
         </div>
     </footer>
